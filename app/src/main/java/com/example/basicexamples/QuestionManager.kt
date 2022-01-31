@@ -1,12 +1,12 @@
-package com.example.layoutbasicexamples
+package com.example.basicexamples
 
 import android.content.Context
 import android.content.res.Resources
 import android.view.Gravity
 import android.widget.*
 import androidx.core.content.ContextCompat.getColor
-import com.example.layoutbasicexamples.model.Question
-import com.example.layoutbasicexamples.model.QuestionType
+import com.example.basicexamples.model.Question
+import com.example.basicexamples.model.QuestionType
 import java.util.*
 
 const val margin: Int = 16

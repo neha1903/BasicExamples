@@ -1,9 +1,9 @@
-package com.example.layoutbasicexamples
+package com.example.basicexamples
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.layoutbasicexamples.databinding.ActivityMainBinding
+import com.example.basicexamples.databinding.ActivityMainBinding
 
 private lateinit var binding: ActivityMainBinding
 

@@ -1,4 +1,4 @@
-package com.example.layoutbasicexamples
+package com.example.basicexamples
 
 import org.junit.Test
 
