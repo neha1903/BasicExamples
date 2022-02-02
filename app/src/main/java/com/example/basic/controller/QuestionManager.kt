@@ -1,12 +1,13 @@
-package com.example.basicexamples
+package com.example.basic.controller
 
 import android.content.Context
 import android.content.res.Resources
 import android.view.Gravity
 import android.widget.*
 import androidx.core.content.ContextCompat.getColor
-import com.example.basicexamples.model.Question
-import com.example.basicexamples.model.QuestionType
+import com.example.basic.R
+import com.example.basic.model.Question
+import com.example.basic.model.QuestionType
 import java.util.*
 
 const val margin: Int = 16
@@ -77,8 +78,8 @@ class QuestionManager(private val context: Context, private val quiz_container: 
         val textView = TextView(context)
         textView.id = counter
         val count = counter + 1
-        textView.text = context.getString(R.string.question , count, question)
-        textView.textSize = 12F
+        textView.text = context.getString(R.string.question, count, question)
+        12F.also { textView.textSize = it }
         textView.setTextColor(getColor(context, R.color.black))
 
         textView.layoutParams = LinearLayout.LayoutParams(
@@ -86,10 +87,10 @@ class QuestionManager(private val context: Context, private val quiz_container: 
             LinearLayout.LayoutParams.WRAP_CONTENT
         ).apply { topMargin = margin.pixel }
 
-        return  textView
+        return textView
     }
 
-    private fun setUpTextQuestion(counter: Int, q:Question){
+    private fun setUpTextQuestion(counter: Int, q: Question) {
         val textView = getQuestionTextView(counter, q.qText)
         val editText = EditText(context)
 
@@ -103,15 +104,15 @@ class QuestionManager(private val context: Context, private val quiz_container: 
         quiz_container.addView(editText)
     }
 
-    private fun setUpRadioQuestion(counter: Int, q:Question){
+    private fun setUpRadioQuestion(counter: Int, q: Question) {
         val textView = getQuestionTextView(counter, q.qText)
         val radioGroup = RadioGroup(context)
         radioGroup.id = q.id
         radioGroup.orientation = RadioGroup.VERTICAL
-         radioGroup.layoutParams = LinearLayout.LayoutParams(
-             LinearLayout.LayoutParams.MATCH_PARENT,
-             LinearLayout.LayoutParams.WRAP_CONTENT
-         )
+        radioGroup.layoutParams = LinearLayout.LayoutParams(
+            LinearLayout.LayoutParams.MATCH_PARENT,
+            LinearLayout.LayoutParams.WRAP_CONTENT
+        )
 
         q.options?.forEachIndexed { index, element ->
             val radioButton = RadioButton(context)
@@ -125,7 +126,7 @@ class QuestionManager(private val context: Context, private val quiz_container: 
         quiz_container.addView(radioGroup)
     }
 
-    private fun setUpCheckBoxQuestion(counter: Int, q:Question){
+    private fun setUpCheckBoxQuestion(counter: Int, q: Question) {
         val textView = getQuestionTextView(counter, q.qText)
         quiz_container.addView(textView)
 

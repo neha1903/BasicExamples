@@ -1,4 +1,4 @@
-package com.example.basicexamples.model
+package com.example.basic.model
 
 enum class QuestionType{
     Text,

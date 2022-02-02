@@ -1,8 +1,9 @@
-package com.example.basicexamples
+package com.example.basic
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.basicexamples.databinding.DynamicLayoutExampleBinding
+import com.example.basic.controller.QuestionManager
+import com.example.basic.databinding.DynamicLayoutExampleBinding
 
 private lateinit var binding: DynamicLayoutExampleBinding
 

@@ -95,4 +95,7 @@
     <string name="b">B</string>
     <string name="a">A</string>
     <string name="alphabets">Alphabets</string>
+    <string name="question_activity">Question Activity</string>
+    <string name="navigate_as_per_choice">Navigate as per Choice</string>
+    <string name="the_question_activity_demonstrate_programmatically_created_views">The question activity demonstrate programmatically created views</string>
 </resources>
