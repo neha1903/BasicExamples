@@ -9,6 +9,11 @@ private lateinit var binding: ActivityMainBinding
 
 const val view = "VIEW"
 const val question = "QUESTION"
+const val eventExample = "EVENT_EXAMPLE"
+const val miniCalculator = "MINI_CALCULATOR"
+const val example1 = "EXAMPLE_1"
+const val example2 = "EXAMPLE_2"
+const val ticTacToeGame = "TIC_TAC_TOE_GAME"
 private lateinit var viewType: String
 
 class MainActivity : AppCompatActivity() {
@@ -19,10 +24,32 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.questionActivityButton.setOnClickListener {
-            viewType = question
-            onClick()
+        binding.apply {
+            questionActivityButton.setOnClickListener {
+                onClick(question)
+            }
+
+            eventExampleButton.setOnClickListener {
+                onClick(eventExample)
+            }
+
+            miniCalculatorButton.setOnClickListener {
+                onClick(miniCalculator)
+            }
+
+            example1Button.setOnClickListener {
+                onClick(example1)
+            }
+
+            example2Button.setOnClickListener {
+                onClick(example2)
+            }
+
+            ticTacToeButton.setOnClickListener { onClick(ticTacToeGame) }
+
+
         }
+
 
     }
 
@@ -34,7 +61,8 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun onClick() {
+    private fun onClick(view: String) {
+        viewType = view
         callViewActivity()
     }
 }

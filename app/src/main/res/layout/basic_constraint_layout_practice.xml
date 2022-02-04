@@ -35,7 +35,8 @@
         android:text="@string/demo_strings"
         app:emojiCompatEnabled="false"
         app:layout_constraintStart_toEndOf="@+id/barrier2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnusedAttribute" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier2"

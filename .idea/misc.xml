@@ -14,8 +14,12 @@
         <entry key="app/src/main/res/layout-v26/basic_constraint_layout_practice.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout-v26/basic_layout_practice.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout-v26/constrain_layout_practice.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_event_example.xml" value="0.22870370370370371" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_mini_calculator.xml" value="0.22870370370370371" />
         <entry key="app/src/main/res/layout/activity_navigation.xml" value="0.25092592592592594" />
+        <entry key="app/src/main/res/layout/activity_tick_tac_toe.xml" value="0.25092592592592594" />
+        <entry key="app/src/main/res/layout/activity_tick_tok.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_view.xml" value="0.1" />
         <entry key="app/src/main/res/layout/basic_constraint_layout_practice.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/basic_layout_practice.xml" value="0.25092592592592594" />
