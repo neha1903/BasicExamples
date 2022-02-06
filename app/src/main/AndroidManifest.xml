@@ -19,7 +19,6 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.basic.ViewActivity" />
-        <activity android:name="com.example.basic.QuestionActivity" />
     </application>
 
 </manifest>

@@ -10,32 +10,30 @@ import com.example.basic.model.Question
 import com.example.basic.model.QuestionType
 import java.util.*
 
-const val margin: Int = 16
-
-val Int.pixel: Int
-    get() = (this * Resources.getSystem().displayMetrics.density).toInt()
-
-
 class QuestionManager(private val context: Context, private val quiz_container: LinearLayout) {
+    private val margin: Int = 16
 
     private var questions: MutableList<Question> = mutableListOf()
 
-    fun initQuestionManager(){
+    private val Int.pixel: Int
+        get() = (this * Resources.getSystem().displayMetrics.density).toInt()
+
+    fun initQuestionManager() {
         setUpQuestions()
         setUpQuiz()
         setSubmitButton()
     }
 
-    private fun setUpQuiz(){
+    private fun setUpQuiz() {
         questions.forEachIndexed { index, question ->
-            when(question.type){
-                QuestionType.Text ->{
+            when (question.type) {
+                QuestionType.Text -> {
                     setUpTextQuestion(index, question)
                 }
-                QuestionType.Radio ->{
+                QuestionType.Radio -> {
                     setUpRadioQuestion(index, question)
                 }
-                QuestionType.CheckBox ->{
+                QuestionType.CheckBox -> {
                     setUpCheckBoxQuestion(index, question)
                 }
             }
@@ -74,7 +72,7 @@ class QuestionManager(private val context: Context, private val quiz_container: 
         )
     }
 
-    private fun getQuestionTextView(counter: Int, question: String) : TextView {
+    private fun getQuestionTextView(counter: Int, question: String): TextView {
         val textView = TextView(context)
         textView.id = counter
         val count = counter + 1
@@ -144,7 +142,7 @@ class QuestionManager(private val context: Context, private val quiz_container: 
 
     }
 
-    private fun setSubmitButton(){
+    private fun setSubmitButton() {
 
         val params = LinearLayout.LayoutParams(
             LinearLayout.LayoutParams.WRAP_CONTENT,
@@ -167,14 +165,14 @@ class QuestionManager(private val context: Context, private val quiz_container: 
     private fun evaluateQuiz() {
         var score = 0
 
-        questions.forEach{ q ->
-            when(q.type){
-                QuestionType.Text ->{
+        questions.forEach { q ->
+            when (q.type) {
+                QuestionType.Text -> {
                     val editText = quiz_container.findViewById<EditText>(q.id)
 
-                    editText?.let{
+                    editText?.let {
                         val userAnswer = it.text.toString().lowercase(Locale.getDefault())
-                        if(userAnswer == q.answers[0]){
+                        if (userAnswer == q.answers[0]) {
                             score++
                         }
                     }
@@ -182,12 +180,12 @@ class QuestionManager(private val context: Context, private val quiz_container: 
                 QuestionType.Radio -> {
                     val radioGroup = quiz_container.findViewById<RadioGroup>(q.id)
 
-                    radioGroup?.let{
+                    radioGroup?.let {
                         val checkedId = it.checkedRadioButtonId
-                        if(checkedId > 0){
+                        if (checkedId > 0) {
                             val radioButton = quiz_container.findViewById<RadioButton>(checkedId)
                             val userAnswer = radioButton.text
-                            if(userAnswer == q.answers[0]){
+                            if (userAnswer == q.answers[0]) {
                                 score++
                             }
                         }
@@ -196,23 +194,27 @@ class QuestionManager(private val context: Context, private val quiz_container: 
                 QuestionType.CheckBox -> {
                     var correct = true
 
-                    q.options?.forEachIndexed{index, _ ->
+                    q.options?.forEachIndexed { index, _ ->
                         val checkedId = (q.id.toString() + index.toString()).toInt()
-                        val checkBox =  quiz_container.findViewById<CheckBox>(checkedId)
-                        if(q.answers.contains(checkBox.text)){
-                            if(!checkBox.isChecked){
+                        val checkBox = quiz_container.findViewById<CheckBox>(checkedId)
+                        if (q.answers.contains(checkBox.text)) {
+                            if (!checkBox.isChecked) {
                                 correct = false
                             }
-                        } else{
-                            if(checkBox.isChecked){
+                        } else {
+                            if (checkBox.isChecked) {
                                 correct = false
                             }
                         }
                     }
-                    if(correct) score++
+                    if (correct) score++
                 }
             }
         }
-        Toast.makeText(context, context.getString(R.string.score_result, score, questions.size), Toast.LENGTH_SHORT).show()
+        Toast.makeText(
+            context,
+            context.getString(R.string.score_result, score, questions.size),
+            Toast.LENGTH_SHORT
+        ).show()
     }
 }
