@@ -14,6 +14,8 @@ const val miniCalculator = "MINI_CALCULATOR"
 const val example1 = "EXAMPLE_1"
 const val example2 = "EXAMPLE_2"
 const val ticTacToeGame = "TIC_TAC_TOE_GAME"
+const val fragmentIntroduction = "FRAGMENT_INTRODUCTION"
+const val fragmentManagerIntro = "FRAGMENT_MANAGER_INTRO"
 private lateinit var viewType: String
 
 class MainActivity : AppCompatActivity() {
@@ -25,28 +27,21 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.apply {
-            questionActivityButton.setOnClickListener {
-                onClick(question)
-            }
+            questionActivityButton.setOnClickListener { onClick(question) }
 
-            eventExampleButton.setOnClickListener {
-                onClick(eventExample)
-            }
+            eventExampleButton.setOnClickListener { onClick(eventExample) }
 
-            miniCalculatorButton.setOnClickListener {
-                onClick(miniCalculator)
-            }
+            miniCalculatorButton.setOnClickListener { onClick(miniCalculator) }
 
-            example1Button.setOnClickListener {
-                onClick(example1)
-            }
+            example1Button.setOnClickListener { onClick(example1) }
 
-            example2Button.setOnClickListener {
-                onClick(example2)
-            }
+            example2Button.setOnClickListener { onClick(example2) }
 
             ticTacToeButton.setOnClickListener { onClick(ticTacToeGame) }
 
+            fragmentIntro.setOnClickListener { onClick(fragmentIntroduction) }
+
+            fragmentManagerIntroduction.setOnClickListener { onClick(fragmentManagerIntro) }
 
         }
 

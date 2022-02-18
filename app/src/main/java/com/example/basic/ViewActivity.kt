@@ -2,10 +2,7 @@ package com.example.basic
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.basic.controller.EventExampleManager
-import com.example.basic.controller.MiniCalculatorManager
-import com.example.basic.controller.QuestionManager
-import com.example.basic.controller.TicTacToeManager
+import com.example.basic.controller.*
 import com.example.basic.databinding.*
 
 
@@ -47,6 +44,19 @@ class ViewActivity : AppCompatActivity() {
                 val view = binding.root
                 setContentView(view)
                 TicTacToeManager(this, binding).initTicTacToeManager()
+            }
+            fragmentIntroduction -> {
+                val binding = FragmentIntroductionBinding.inflate(layoutInflater)
+                val view = binding.root
+                setContentView(view)
+                FragmentIntroductionManager(this).initFragmentIntroductionManager()
+            }
+            fragmentManagerIntro -> {
+                val binding = FragmentManagerIntroBinding.inflate(layoutInflater)
+                val view = binding.root
+                setContentView(view)
+                FragmentManagerIntroduction(this, binding).initFragmentManagerIntroductionManager()
+
             }
             else -> {
                 val binding = ActivityViewBinding.inflate(layoutInflater)

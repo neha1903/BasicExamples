@@ -15,7 +15,8 @@
         <entry key="app/src/main/res/layout-v26/basic_layout_practice.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout-v26/constrain_layout_practice.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/activity_event_example.xml" value="0.22870370370370371" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_fragment_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2754098360655738" />
         <entry key="app/src/main/res/layout/activity_mini_calculator.xml" value="0.22870370370370371" />
         <entry key="app/src/main/res/layout/activity_navigation.xml" value="0.25092592592592594" />
         <entry key="app/src/main/res/layout/activity_tick_tac_toe.xml" value="0.25092592592592594" />
@@ -28,6 +29,10 @@
         <entry key="app/src/main/res/layout/constrain_layout_practice.xml" value="0.25092592592592594" />
         <entry key="app/src/main/res/layout/contraint_layout_practice.xml" value="0.25092592592592594" />
         <entry key="app/src/main/res/layout/dynamic_layout_example.xml" value="0.17617753623188406" />
+        <entry key="app/src/main/res/layout/fragmenet_manager_intro.xml" value="0.26979166666666665" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/fragment_introduction.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/frame_layout_basic.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/layout_assignment_practice.xml" value="0.25092592592592594" />
         <entry key="app/src/main/res/layout/layout_design_shopping_cart.xml" value="0.28229166666666666" />

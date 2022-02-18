@@ -110,6 +110,34 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/mini_calculator_button" />
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_assignments"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tic_tac_toe_button" />
+
+        <Button
+            android:id="@+id/fragment_intro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_introduction"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView61" />
+
+        <Button
+            android:id="@+id/fragment_manager_introduction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_manager_intro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_intro" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

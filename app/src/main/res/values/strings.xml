@@ -126,4 +126,12 @@
     <string name="player_two_x">Player Two: X</string>
     <string name="o">O</string>
     <string name="x">X</string>
+    <string name="fragment_assignments">Fragment Assignments</string>
+    <string name="fragment_introduction">Fragment Introduction</string>
+    <string name="fragment_manager_intro">Fragment Manager Intro</string>
+    <string name="view_activity">View Activity</string>
+    <string name="hello_first_fragment">Hello First Fragment</string>
+    <string name="hello_second_fragment">Hello second Fragment</string>
+    <string name="remove">Remove</string>
+    <string name="replace">Replace</string>
 </resources>
