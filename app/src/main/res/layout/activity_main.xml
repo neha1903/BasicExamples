@@ -138,6 +138,15 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/fragment_intro" />
+
+        <Button
+            android:id="@+id/frag_interaction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_interaction"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_manager_introduction" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

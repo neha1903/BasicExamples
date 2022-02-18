@@ -16,6 +16,7 @@ const val example2 = "EXAMPLE_2"
 const val ticTacToeGame = "TIC_TAC_TOE_GAME"
 const val fragmentIntroduction = "FRAGMENT_INTRODUCTION"
 const val fragmentManagerIntro = "FRAGMENT_MANAGER_INTRO"
+const val fragmentInteraction = "FRAGMENT_INTERACTION"
 private lateinit var viewType: String
 
 class MainActivity : AppCompatActivity() {
@@ -42,6 +43,8 @@ class MainActivity : AppCompatActivity() {
             fragmentIntro.setOnClickListener { onClick(fragmentIntroduction) }
 
             fragmentManagerIntroduction.setOnClickListener { onClick(fragmentManagerIntro) }
+
+            fragInteraction.setOnClickListener { onClick(fragmentInteraction) }
 
         }
 

@@ -134,4 +134,7 @@
     <string name="hello_second_fragment">Hello second Fragment</string>
     <string name="remove">Remove</string>
     <string name="replace">Replace</string>
+    <string name="fragment_interaction">Fragment Interaction</string>
+    <string name="show_fragment_message">show fragment message</string>
+    <string name="show_activity_message">show activity message</string>
 </resources>

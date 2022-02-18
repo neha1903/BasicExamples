@@ -56,7 +56,12 @@ class ViewActivity : AppCompatActivity() {
                 val view = binding.root
                 setContentView(view)
                 FragmentManagerIntroduction(this, binding).initFragmentManagerIntroductionManager()
-
+            }
+            fragmentInteraction -> {
+                val binding = FragmentInteractionLayoutBinding.inflate(layoutInflater)
+                val view = binding.root
+                setContentView(view)
+                FragmentInteractionManager(this, binding).initFragmentInteractionManager()
             }
             else -> {
                 val binding = ActivityViewBinding.inflate(layoutInflater)
