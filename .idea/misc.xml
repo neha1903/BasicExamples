@@ -33,9 +33,11 @@
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/fragment_interaction_layout.xml" value="0.26979166666666665" />
         <entry key="app/src/main/res/layout/fragment_introduction.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/fragment_navigation.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_one.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/frame_layout_basic.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/implicit_intent_example.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/layout_assignment_practice.xml" value="0.25092592592592594" />
         <entry key="app/src/main/res/layout/layout_design_shopping_cart.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/linear_layout_horizontal.xml" value="0.25" />

@@ -17,6 +17,8 @@ const val ticTacToeGame = "TIC_TAC_TOE_GAME"
 const val fragmentIntroduction = "FRAGMENT_INTRODUCTION"
 const val fragmentManagerIntro = "FRAGMENT_MANAGER_INTRO"
 const val fragmentInteraction = "FRAGMENT_INTERACTION"
+const val fragmentNavigation = "FRAGMENT_NAVIGATION"
+const val implicitIntent = "IMPLICIT_INTENT"
 private lateinit var viewType: String
 
 class MainActivity : AppCompatActivity() {
@@ -45,6 +47,11 @@ class MainActivity : AppCompatActivity() {
             fragmentManagerIntroduction.setOnClickListener { onClick(fragmentManagerIntro) }
 
             fragInteraction.setOnClickListener { onClick(fragmentInteraction) }
+
+            fragNav.setOnClickListener { onClick(fragmentNavigation) }
+
+            implicitIntentExample.setOnClickListener { onClick(implicitIntent) }
+
 
         }
 

@@ -137,4 +137,13 @@
     <string name="fragment_interaction">Fragment Interaction</string>
     <string name="show_fragment_message">show fragment message</string>
     <string name="show_activity_message">show activity message</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_navigation">Fragment Navigation</string>
+    <string name="intent_assignment">Intent Assignments</string>
+    <string name="implicit_intent">Implicit Intent</string>
+    <string name="open_text">Open Url In The Browser</string>
+    <string name="google_url">https://www.google.com</string>
+    <string name="no_activity">No activity found to handle this intent</string>
+
 </resources>

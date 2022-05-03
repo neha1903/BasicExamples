@@ -147,6 +147,36 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/fragment_manager_introduction" />
+
+        <Button
+            android:id="@+id/frag_nav"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_navigation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frag_interaction" />
+
+        <TextView
+            android:id="@+id/intents_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/intent_assignment"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frag_nav" />
+
+        <Button
+            android:id="@+id/implicit_intent_example"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/implicit_intent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/intents_textView" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
